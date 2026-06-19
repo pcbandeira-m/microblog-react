@@ -1,0 +1,10 @@
+.cards {
+    display: flex;
+    gap: 32px;
+    margin: 0 210px;
+}
+
+.post-section-header {
+    margin: 0 260px;
+    justify-content: space-between;
+}
