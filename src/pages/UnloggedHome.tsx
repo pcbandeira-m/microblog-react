@@ -194,14 +194,16 @@ function UnloggedHome() {
 						className="crumb-list"
 						role="list"
 					>
-						<li className="crumb home">
+						<li className="crumb home ml-10x">
 							<a
 								className="br-button circle"
 								href="javascript:void(0)"
 							>
-								<span className="sr-only">Página inicial</span>
-								<i className="fas fa-home"></i>
+								{/* <span className="sr-only">Página inicial</span> */}
+								<i className="fas fa-house"></i>
+								<i className="icon fas fa-chevron-right"></i>
 							</a>
+							<span>Página inicial</span>
 						</li>
 					</ol>
 				</nav>
@@ -340,7 +342,7 @@ function UnloggedHome() {
 								</div>
 								<div
 									className="card-content"
-									tabindex="0"
+									tabIndex="0"
 								>
 									<img
 										src={postPhoto1}
@@ -430,7 +432,7 @@ function UnloggedHome() {
 								</div>
 								<div
 									className="card-content"
-									tabindex="0"
+									tabIndex="0"
 								>
 									<img
 										src={postPhoto4}
@@ -520,7 +522,7 @@ function UnloggedHome() {
 								</div>
 								<div
 									className="card-content"
-									tabindex="0"
+									tabIndex="0"
 								>
 									<img
 										src={postPhoto3}
@@ -608,7 +610,7 @@ function UnloggedHome() {
 								</div>
 								<div
 									className="card-content"
-									tabindex="0"
+									tabIndex="0"
 								>
 									<img
 										src={postPhoto2}
