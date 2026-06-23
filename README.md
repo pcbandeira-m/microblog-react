@@ -1,73 +1,31 @@
-# React + TypeScript + Vite
+# Treinamento PNP - Microblog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Principais demandas do projeto
 
-Currently, two official plugins are available:
+### Login
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Faz-se necessário criar a tela de login da aplicação, permitindo que usuários autenticados acessem a área restrita do sistema. Após a validação das credenciais, o usuário deverá ser direcionado para a página principal.
 
-## React Compiler
+### Publicar no sistema
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Faz-se necessário criar a funcionalidade de publicação de conteúdo para o feed da aplicação. Os usuários deverão poder criar publicações, com possibilidade de adicionar uma imagem, seguindo o padrão do sistema.
 
-## Expanding the ESLint configuration
+### Comentar na publicação
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Faz-se necessário implementar uma funcionalidade para que os usuários possam comentar nas publicações do feed da aplicação. Os comentários deverão ficar associados à publicação correspondente, seguindo o padrão já utilizado pelo sistema.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Visualizar publicações
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Faz-se necessário criar uma funcionalidade para exibição das publicações disponíveis na aplicação, permitindo que os usuários visualizem os conteúdos compartilhados por outros usuários.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Diretórios, arquivos e padrões de implementação
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+A estrutura de diretórios utilizada e os padrões de implementação do projeto serão nos padrões PNP.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Regras de Negócio
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| RNs                      | Descrição                                                                                                                                   |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| RN 1 <a name="rn-1"></a> | O nome de usuário usado para fazer login deve ser único no sistema.                                                                         |
+| RN 2 <a name="rn-2"></a> | A confirmação de senha deve ser igual a senha no cadastro.                                                                                  |
+| RN 3 <a name="rn-3"></a> | O feed deve apresentar as publicações de outros usuários, organizadas em ordem decrescente de data, das mais recentes para as mais antigas. |

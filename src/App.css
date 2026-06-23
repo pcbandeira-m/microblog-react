@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .cards {
     display: flex;
     gap: 32px;
@@ -11,4 +17,37 @@
 
 .crumb {
     margin: 0 210px;
+}
+
+.main-login {
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+.logo-ifrn {
+    scale:calc(1.8);
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.post-content {
+    display: flex;
+    justify-self: center;
+    gap: 2rem;
+}
+
+.post-content img {
+    max-width: 900px;l
+}
+
+.post-text {
+    max-width: 1260px;
 }
