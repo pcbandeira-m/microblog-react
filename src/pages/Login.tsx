@@ -1,6 +1,7 @@
 import "../App.css";
 import logoHeader from "../assets/ifrn/logo-header.png";
 import whiteLogo from "../assets/ifrn/logo-register-login.png";
+import BrButton from "../components/BrButton";
 
 function Login() {
 	return (
@@ -82,18 +83,28 @@ function Login() {
 							</div>
 
 							<div className="login-buttons mt-2x d-flex align-self-end">
-								<button
+								<BrButton
+									label="Cancelar"
+									action={} // criar função para voltar para a UnloggedHome
+									className="br-button secondary mr-3"
+								/>
+								{/* <button
 									class="br-button secondary mr-3"
 									type="button"
 								>
 									Cancelar
-								</button>
-								<button
+								</button> */}
+								<BrButton
+									label="Entrar"
+									action={} // criar função para a LoggedHome
+									className="br-button primary mr-3"
+								/>
+								{/* <button
 									class="br-button primary mr-3"
 									type="button"
 								>
 									Entrar
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>
