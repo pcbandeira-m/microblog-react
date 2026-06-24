@@ -112,18 +112,28 @@ function UnloggedHome() {
 								</div>
 								<div className="header-login">
 									<div className="header-sign-in">
-										<button
+										<BrButton
+											label="Cadastrar"
+											action={} // função para a página Register
+											className="br-button primary mr-3"
+										/>
+										{/* <button
 											className="br-button primary mr-3"
 											type="button"
 										>
 											Cadastrar
-										</button>
-										<button
+										</button> */}
+										<BrButton
+											label="Entrar"
+											action={} // criar função para a página Login
+											className="br-button secondary mr-3"
+										/>
+										{/* <button
 											className="br-button secondary mr-3"
 											type="button"
 										>
 											Entrar
-										</button>
+										</button> */}
 									</div>
 									<div className="header-avatar"></div>
 								</div>
