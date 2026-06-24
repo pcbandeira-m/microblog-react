@@ -124,18 +124,28 @@ function Register() {
 								</label>
 							</div>
 							<div className="login-buttons mt-2x d-flex align-self-end">
-								<button
+								<BrButton
+									label="Cancelar"
+									action={} // função para a página UnloggedHome
+									className="br-button secondary mr-3"
+								/>
+								{/* <button
 									className="br-button secondary mr-3"
 									type="button"
 								>
 									Cancelar
-								</button>
-								<button
+								</button> */}
+								<BrButton
+									label="Cadastrar"
+									action={} // criar função para novo usuário
+									className="br-button primary mr-3"
+								/>
+								{/* <button
 									className="br-button primary mr-3"
 									type="button"
 								>
 									Cadastrar
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>
