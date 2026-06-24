@@ -99,18 +99,28 @@ function Post() {
 								</div>
 								<div className="header-login">
 									<div className="header-sign-in">
-										<button
+										<BrButton
+											label="Publicar"
+											action={} // criar função para publicar post
+											className="br-button primary mr-3"
+										/>
+										{/* <button
 											className="br-button primary mr-3"
 											type="button"
 										>
 											Publicar
-										</button>
-										<button
+										</button> */}
+										<BrButton
+											label="Perfil"
+											action={} // criar função para acesso ao perfil (?)
+											className="br-button secondary mr-3"
+										/>
+										{/* <button
 											className="br-button secondary mr-3"
 											type="button"
 										>
 											Perfil
-										</button>
+										</button> */}
 									</div>
 									<div className="header-avatar"></div>
 								</div>
@@ -331,18 +341,28 @@ function Post() {
 								></textarea>
 							</div>
 							<div className="comment-buttons mt-2x d-flex justify-content-end">
-								<button
+								<BrButton
+									label="Salvar"
+									action={} // criar função para salvar comentário
+									className="br-button secondary mr-3"
+								/>
+								{/* <button
 									className="br-button secondary mr-3"
 									type="button"
 								>
 									Salvar
-								</button>
-								<button
+								</button> */}
+								<BrButton
+									label="Comentário"
+									action={} // criar função para salvar comentário
+									className="br-button primary mr-3"
+								/>
+								{/* <button
 									className="br-button primary mr-3"
 									type="button"
 								>
 									Comentário
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>
