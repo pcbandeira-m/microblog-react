@@ -341,28 +341,28 @@ function Post() {
 								></textarea>
 							</div>
 							<div className="comment-buttons mt-2x d-flex justify-content-end">
-								<BrButton
+								{/* <BrButton
 									label="Salvar"
 									action={} // criar função para salvar comentário
 									className="br-button secondary mr-3"
-								/>
-								{/* <button
+								/> */}
+								<button
 									className="br-button secondary mr-3"
 									type="button"
 								>
 									Salvar
-								</button> */}
-								<BrButton
-									label="Comentário"
+								</button>
+								{/* <BrButton
+									label="Comentar"
 									action={} // criar função para salvar comentário
 									className="br-button primary mr-3"
-								/>
-								{/* <button
+								/> */}
+								<button
 									className="br-button primary mr-3"
 									type="button"
 								>
-									Comentário
-								</button> */}
+									Comentar
+								</button>
 							</div>
 						</div>
 					</div>

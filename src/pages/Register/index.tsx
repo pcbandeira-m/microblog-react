@@ -1,4 +1,5 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 import logoHeader from "../assets/ifrn/logo-header.png";
 import whiteLogo from "../assets/ifrn/logo-register-login.png";
 
@@ -124,22 +125,24 @@ function Register() {
 								</label>
 							</div>
 							<div className="login-buttons mt-2x d-flex align-self-end">
-								<BrButton
-									label="Cancelar"
-									action={} // função para a página UnloggedHome
+								<Link
+									to="/"
 									className="br-button secondary mr-3"
-								/>
+								>
+									Cancelar
+								</Link>
 								{/* <button
 									className="br-button secondary mr-3"
 									type="button"
 								>
 									Cancelar
 								</button> */}
-								<BrButton
-									label="Cadastrar"
-									action={} // criar função para novo usuário
-									className="br-button primary mr-3"
-								/>
+								<Link
+									to="/loggedhome"
+									className="br-button secondary mr-3"
+								>
+									Cadastrar
+								</Link>
 								{/* <button
 									className="br-button primary mr-3"
 									type="button"

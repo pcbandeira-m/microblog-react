@@ -1,7 +1,8 @@
 import "../App.css";
+import { Link } from "react-router-dom";
 import logoHeader from "../assets/ifrn/logo-header.png";
 import whiteLogo from "../assets/ifrn/logo-register-login.png";
-import BrButton from "../components/BrButton";
+import BrButton from "../../components/BrButton";
 
 function Login() {
 	return (
@@ -83,22 +84,24 @@ function Login() {
 							</div>
 
 							<div className="login-buttons mt-2x d-flex align-self-end">
-								<BrButton
-									label="Cancelar"
-									action={} // criar função para voltar para a UnloggedHome
+								<Link
+									to="/"
 									className="br-button secondary mr-3"
-								/>
+								>
+									Cancelar
+								</Link>
 								{/* <button
 									class="br-button secondary mr-3"
 									type="button"
 								>
 									Cancelar
 								</button> */}
-								<BrButton
-									label="Entrar"
-									action={} // criar função para a LoggedHome
+								<Link
+									to="/loggedhome"
 									className="br-button primary mr-3"
-								/>
+								>
+									Entrar
+								</Link>
 								{/* <button
 									class="br-button primary mr-3"
 									type="button"
