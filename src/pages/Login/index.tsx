@@ -1,8 +1,8 @@
-import "../App.css";
+import "../../App.css";
 import { Link } from "react-router-dom";
-import logoHeader from "../assets/ifrn/logo-header.png";
-import whiteLogo from "../assets/ifrn/logo-register-login.png";
-import BrButton from "../../components/BrButton";
+import logoHeader from "../../assets/ifrn/logo-header.png";
+import whiteLogo from "../../assets/ifrn/logo-register-login.png";
+import BrButton from "../../components/BrButton/index.tsx";
 
 function Login() {
 	return (

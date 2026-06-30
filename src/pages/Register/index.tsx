@@ -1,7 +1,7 @@
-import "../App.css";
+import "../../App.css";
 import { Link } from "react-router-dom";
-import logoHeader from "../assets/ifrn/logo-header.png";
-import whiteLogo from "../assets/ifrn/logo-register-login.png";
+import logoHeader from "../../assets/ifrn/logo-header.png";
+import whiteLogo from "../../assets/ifrn/logo-register-login.png";
 
 function Register() {
 	return (

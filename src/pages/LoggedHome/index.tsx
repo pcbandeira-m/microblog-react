@@ -1,3 +1,24 @@
+import { Link } from "react-router-dom";
+// @ts-ignore: side-effect import of CSS without module declarations
+import "../../App.css";
+import logoHeader from "../../assets/ifrn/logo-header.png";
+import logoFooter from "../../assets/ifrn/logo-footer.png";
+import menuSandwich from "../../assets/icons/icon-sandwich.svg";
+import profSilvia from "../../assets/authors/silvia.png";
+import profMarilia from "../../assets/authors/marilia.png";
+import profJorgiano from "../../assets/authors/jorgiano.png";
+import profFellipe from "../../assets/authors/fellipao.png";
+import postPhoto1 from "../../assets/posts/students1.jpeg";
+import postPhoto2 from "../../assets/posts/students2.jpeg";
+import postPhoto3 from "../../assets/posts/woman1.jpeg";
+import postPhoto4 from "../../assets/posts/woman2.jpeg";
+import cnat from "../../assets/campi/cnat.png";
+import ipanguacu from "../../assets/campi/ipanguacu.png";
+import mossoro from "../../assets/campi/mossoro.png";
+import natalZN from "../../assets/campi/natal-zn.png";
+import saoGoncalo from "../../assets/campi/sao-goncalo-do-amarante.png";
+import BrButton from "../../components/BrButton/index.tsx";
+
 function LoggedHome() {
 	return (
 		<>
@@ -94,7 +115,7 @@ function LoggedHome() {
 									<div className="header-sign-in">
 										<BrButton
 											label="Cadastrar"
-											action={} // função para a página Register
+											// action={} // função para a página Register
 											className="br-button primary mr-3"
 										/>
 										{/* <button
@@ -105,7 +126,7 @@ function LoggedHome() {
 										</button> */}
 										<BrButton
 											label="Entrar"
-											action={} // criar função para a página Login
+											// action={} // criar função para a página Login
 											className="br-button secondary mr-3"
 										/>
 										{/* <button

@@ -1,5 +1,5 @@
 export interface IButtonProps {
-    action: () => void;
-    label: string;
-    className?: string;
+	// action: () => void;
+	label: string;
+	className?: string;
 }

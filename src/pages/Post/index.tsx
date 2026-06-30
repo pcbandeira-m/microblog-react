@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import "../App.css";
-import logoHeader from "../assets/ifrn/logo-header.png";
-import logoFooter from "../assets/ifrn/logo-footer.png";
-import menuSandwich from "../assets/icons/icon-sandwich.svg";
-import postPhoto4 from "../assets/posts/woman2.jpeg";
+import "../../App.css";
+import logoHeader from "../../assets/ifrn/logo-header.png";
+import logoFooter from "../../assets/ifrn/logo-footer.png";
+import menuSandwich from "../../assets/icons/icon-sandwich.svg";
+import postPhoto4 from "../../assets/posts/woman2.jpeg";
+import BrButton from "../../components/BrButton/index.tsx";
 
 function Post() {
 	return (
@@ -101,7 +102,7 @@ function Post() {
 									<div className="header-sign-in">
 										<BrButton
 											label="Publicar"
-											action={} // criar função para publicar post
+											// action={} // criar função para publicar post
 											className="br-button primary mr-3"
 										/>
 										{/* <button
@@ -112,7 +113,7 @@ function Post() {
 										</button> */}
 										<BrButton
 											label="Perfil"
-											action={} // criar função para acesso ao perfil (?)
+											// action={} // criar função para acesso ao perfil (?)
 											className="br-button secondary mr-3"
 										/>
 										{/* <button
