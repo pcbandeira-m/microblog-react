@@ -148,8 +148,8 @@ function LoggedHome() {
 										type="button"
 										aria-label="Menu"
 										data-toggle="menu"
-										data-target="#main-navigation"
-										id="navigation"
+										data-target="#main-divigation"
+										id="divigation"
 									>
 										<i
 											className="fas fa-bars"
@@ -203,7 +203,7 @@ function LoggedHome() {
 					</div>
 				</header>
 
-				<nav
+				<div
 					className="br-breadcrumb ml-10x"
 					aria-label="Breadcrumbs"
 				>
@@ -223,12 +223,12 @@ function LoggedHome() {
 							<span>Página inicial</span>
 						</li>
 					</ol>
-				</nav>
+				</div>
 
 				<div className="post-section">
 					<div className="post-section-header d-flex">
 						<span className="h6">Mais recentes</span>
-						<nav
+						<div
 							className="br-pagination"
 							aria-label="paginação"
 							data-total="10"
@@ -320,7 +320,7 @@ function LoggedHome() {
 									</button>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
 					<div className="cards d-flex mt-3x">
 						<div className="col-sm-6 col-md-4 col-lg-3">
@@ -682,7 +682,7 @@ function LoggedHome() {
 
 					<div className="post-section-header d-flex mt-6x">
 						<span className="h6">Mais acessados</span>
-						<nav
+						<div
 							className="br-pagination"
 							aria-label="paginação"
 							data-total="10"
@@ -774,7 +774,7 @@ function LoggedHome() {
 									</button>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
 					<div className="cards d-flex mt-3x">
 						<div className="col-sm-6 col-md-4 col-lg-3">
@@ -1136,7 +1136,7 @@ function LoggedHome() {
 
 					<div className="post-section-header d-flex mt-6x">
 						<span className="h6">Por campus</span>
-						<nav
+						<div
 							className="br-pagination"
 							aria-label="paginação"
 							data-total="10"
@@ -1228,7 +1228,7 @@ function LoggedHome() {
 									</button>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
 					<div className="cards-campus d-flex justify-content-center gap-4 mt-4x">
 						<img
@@ -1260,7 +1260,7 @@ function LoggedHome() {
 
 					<div className="post-section-header d-flex mt-6x">
 						<span className="h6">Por autor(a)</span>
-						<nav
+						<div
 							className="br-pagination"
 							aria-label="paginação"
 							data-total="10"
@@ -1352,7 +1352,7 @@ function LoggedHome() {
 									</button>
 								</li>
 							</ul>
-						</nav>
+						</div>
 					</div>
 					<div className="cards d-flex mt-3x mb-10x">
 						<div className="col-sm-6 col-md-4 col-lg-3">

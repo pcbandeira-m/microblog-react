@@ -51,3 +51,7 @@
 .post-text {
     max-width: 1260px;
 }
+
+.br-card::hover {
+    cursor: pointer;
+}

@@ -190,7 +190,7 @@ function Post() {
 					</div>
 				</header>
 
-				<nav
+				<div
 					className="br-breadcrumb ml-10x"
 					aria-label="Breadcrumbs"
 				>
@@ -210,7 +210,7 @@ function Post() {
 							<span>Post</span>
 						</li>
 					</ol>
-				</nav>
+				</div>
 
 				<div className="content-section ml-10x mb-8x">
 					<div className="post-infos ml-10x">
