@@ -16,6 +16,7 @@ const schema = yup.object().shape({
 		.min(3, "Nome deve ter pelo menos 3 caracteres"),
 	senha: yup
 		.string()
+		.required("Senha é obrigatório")
 		.test(
 			"type",
 			"A senha deve ser composta apenas de números.",
@@ -220,10 +221,7 @@ function Register(): React.ReactNode {
 								>
 									Cancelar
 								</button> */}
-								<button
-									className="br-button secondary mr-3"
-									type="button"
-								>
+								<button className="br-button secondary mr-3">
 									Cadastrar
 								</button>
 							</div>
